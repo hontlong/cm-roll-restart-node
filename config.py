@@ -46,6 +46,9 @@ restart_all = False
 
 ##############################
 role = role.upper()
+import urllib
+passwd=urllib.quote_plus(passwd,safe='')
+clusterName=urllib.quote(clusterName,safe='')
 ##############################
 
 if __name__ == "main":
